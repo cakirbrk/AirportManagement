@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane"  prefHeight="400.0" prefWidth="640.0" stylesheets="@sample/main.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tav.springBootFX.Controlller.LoginController">
+    <children>
+      <AnchorPane prefHeight="400.0" prefWidth="640.0" stylesheets="@sample/main.css">
+         <children>
+            <TextField fx:id="txt_username" layoutX="246.0" layoutY="119.0" />
+            <Button fx:id="btn_login" layoutX="294.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Button" />
+            <PasswordField fx:id="txt_password" layoutX="246.0" layoutY="175.0" />
+            <Label fx:id="label" layoutX="246.0" layoutY="272.0" text="Label" />
+         </children>
+      </AnchorPane>
+  </children>
+</AnchorPane>

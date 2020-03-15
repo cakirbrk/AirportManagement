@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ToolBar layoutX="297.0" layoutY="14.0" AnchorPane.rightAnchor="14.0">
+               <items>
+                  <JFXButton text="Home" />
+                  <JFXButton text="Flight" />
+                  <JFXButton text="Resource" />
+                  <JFXButton text="Management" />
+                  <JFXButton text="Logout" />
+               </items>
+            </ToolBar>
+            <Pane layoutY="50.0" prefHeight="350.0" prefWidth="640.0">
+               <children>
+                  <JFXButton layoutX="584.0" layoutY="14.0" text="Gate" />
+                  <JFXButton layoutX="522.0" layoutY="14.0" text="Carousel" />
+                  <JFXButton layoutX="463.0" layoutY="14.0" text="Counter" />
+                  <JFXButton layoutX="416.0" layoutY="14.0" text="Stand" />
+                  <JFXTextField layoutX="14.0" layoutY="14.0" promptText="Search" />
+                  <TableView layoutY="45.0" prefHeight="305.0" prefWidth="640.0">
+                    <columns>
+                      <TableColumn prefWidth="50.0" text="C1" />
+                      <TableColumn prefWidth="51.0" text="C2" />
+                        <TableColumn prefWidth="91.0" text="Column X" />
+                        <TableColumn prefWidth="75.0" text="Column X" />
+                        <TableColumn text="Column X" />
+                        <TableColumn prefWidth="60.0" text="Column X" />
+                        <TableColumn prefWidth="59.0" text="Column X" />
+                        <TableColumn prefWidth="77.0" text="Column X" />
+                        <TableColumn prefWidth="61.0" text="Column X" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

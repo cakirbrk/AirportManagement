@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ToolBar layoutX="297.0" layoutY="15.0">
+               <items>
+                  <JFXButton text="Home" />
+                  <JFXButton text="Flight" />
+                  <JFXButton text="Resource" />
+                  <JFXButton text="Management" />
+                  <JFXButton text="Logout" />
+               </items>
+            </ToolBar>
+            <Pane layoutX="-1.0" layoutY="49.0" prefHeight="352.0" prefWidth="640.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="120.0" prefWidth="612.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="17.0" text="username" />
+                        <Label layoutX="14.0" layoutY="49.0" text="password" />
+                        <Label layoutX="14.0" layoutY="81.0" text="confirm password" />
+                        <JFXTextField layoutX="110.0" layoutY="77.0" />
+                        <JFXTextField layoutX="110.0" layoutY="46.0" />
+                        <JFXTextField layoutX="110.0" layoutY="13.0" />
+                        <Label layoutX="305.0" layoutY="17.0" text="role" />
+                        <JFXComboBox layoutX="401.0" layoutY="13.0" prefHeight="25.0" prefWidth="135.0" />
+                        <JFXButton layoutX="401.0" layoutY="77.0" text="Add" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="29.0" layoutY="4.0" text="New User" />
+                  <JFXTextField layoutX="29.0" layoutY="150.0" promptText="Search" />
+                  <TableView layoutX="25.0" layoutY="182.0" prefHeight="170.0" prefWidth="590.0">
+                    <columns>
+                      <TableColumn editable="false" prefWidth="295.0" text="username" />
+                      <TableColumn editable="false" prefWidth="295.0" text="role" />
+                    </columns>
+                  </TableView>
+                  <JFXButton layoutX="564.0" layoutY="150.0" text="Delete" />
+                  <JFXButton layoutX="509.0" layoutY="150.0" text="Update" />
+               </children>
+            </Pane>
+            <Label layoutX="14.0" layoutY="32.0" text="Users" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

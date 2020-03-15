@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" fx:controller="com.tav.springBootFX.Controlller.FlightController" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ToolBar layoutX="292.0" layoutY="14.0">
+              <items>
+                  <JFXButton text="Home" />
+                  <JFXButton text="Flight" />
+                  <JFXButton text="Resource" />
+                  <JFXButton text="Management" />
+                  <JFXButton text="Logout" />
+              </items>
+            </ToolBar>
+            <Pane layoutY="54.0" prefHeight="321.0" prefWidth="640.0">
+               <children>
+                  <JFXButton layoutX="562.0" layoutY="14.0" prefHeight="25.0" prefWidth="62.0" text="Delete" />
+                  <JFXButton layoutX="500.0" layoutY="14.0" prefHeight="25.0" prefWidth="62.0" text="Update" />
+                  <JFXButton layoutX="438.0" layoutY="14.0" prefHeight="25.0" prefWidth="62.0" text="New" />
+                  <JFXTextField layoutX="14.0" layoutY="14.0" promptText="Search" />
+                  <JFXTabPane layoutX="-1.0" layoutY="48.0" prefHeight="274.0" prefWidth="640.0">
+                     <tabs>
+                        <Tab text="Arival">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="261.0" prefWidth="640.0">
+                                      <columns>
+                                        <TableColumn prefWidth="187.0" text="Flight No" />
+                                        <TableColumn prefWidth="127.0" text="Destination" />
+                                          <TableColumn minWidth="0.0" prefWidth="172.0" text="DepartureDate Time" />
+                                          <TableColumn prefWidth="150.0" text="Airline" />
+                                      </columns>
+                                    </TableView>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Departures">
+                          <content>
+                            <AnchorPane>
+                                 <children>
+                                    <TableView layoutX="6.0" layoutY="17.0" prefHeight="257.0" prefWidth="640.0">
+                                       <columns>
+                                          <TableColumn prefWidth="187.0" text="Flight No" />
+                                          <TableColumn prefWidth="127.0" text="Destination" />
+                                          <TableColumn minWidth="0.0" prefWidth="172.0" text="DepartureDate Time" />
+                                          <TableColumn prefWidth="150.0" text="Airline" />
+                                       </columns>
+                                    </TableView>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

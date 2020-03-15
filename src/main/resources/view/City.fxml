@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane fx:controller="com.project.airportM.Controller.CityController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutY="50.0" prefHeight="350.0" prefWidth="640.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <JFXButton layoutX="575.0" layoutY="115.0" text="Delete" />
+                  <JFXButton layoutX="520.0" layoutY="115.0" text="Update" />
+                  <JFXTextField layoutX="14.0" layoutY="115.0" promptText="Search" />
+                  <TableView layoutY="150.0" prefHeight="200.0" prefWidth="640.0" style="-fx-background-color: #eee;">
+                     <columns>
+                        <TableColumn minWidth="100.0" prefWidth="640.0" text="City" />
+                     </columns>
+                  </TableView>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="612.0" style="-fx-background-color: #eee;">
+                     <children>
+                        <JFXButton fx:id="btnAdd" layoutX="287.0" layoutY="38.0" onAction="#setBtnAdd" text="Add" />
+                        <JFXTextField fx:id="txtCityCode" layoutX="14.0" layoutY="14.0" promptText="City Code" />
+                        <JFXTextField fx:id="txtDescription" layoutX="14.0" layoutY="51.0" promptText="City" />
+                        <Label fx:id="lblError" layoutX="325.0" layoutY="42.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="22.0" text="Add City" />
+               </children>
+            </Pane>
+            <Label layoutX="7.0" layoutY="32.0" text="City" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

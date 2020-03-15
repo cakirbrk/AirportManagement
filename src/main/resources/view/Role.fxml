@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vbox" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tav.springBootFX.Controlller.RoleController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="50.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane layoutY="50.0" prefHeight="350.0" prefWidth="640.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <JFXButton layoutX="575.0" layoutY="115.0" text="Delete" />
+                  <JFXButton layoutX="520.0" layoutY="115.0" text="Update" />
+                  <JFXTextField layoutX="14.0" layoutY="115.0" promptText="Search" />
+                  <TableView layoutY="150.0" prefHeight="200.0" prefWidth="640.0" style="-fx-background-color: #eee;">
+                     <columns>
+                        <TableColumn minWidth="100.0" prefWidth="640.0" text="Role" />
+                     </columns>
+                  </TableView>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="612.0" style="-fx-background-color: #eee;">
+                     <children>
+                        <JFXButton fx:id="btnAdd" layoutX="287.0" layoutY="38.0" text="Add" />
+                        <JFXTextField fx:id="txtRoleCode" layoutX="14.0" layoutY="14.0" promptText="Role Code" />
+                        <JFXTextField fx:id="txtRole" layoutX="14.0" layoutY="51.0" promptText="Role" />
+                        <Label fx:id="lblError" layoutX="325.0" layoutY="43.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="22.0" text="Add Role" />
+               </children>
+            </Pane>
+            <ToolBar layoutX="297.0" layoutY="14.0">
+               <items>
+                  <JFXButton fx:id="btnHome" text="Home" />
+                  <JFXButton fx:id="btnFlight" text="Flight" />
+                  <JFXButton fx:id="btnResources" onAction="#setBtnRole" text="Resource" />
+                  <JFXButton text="Management" />
+                  <JFXButton text="Logout" />
+               </items>
+            </ToolBar>
+            <Label layoutX="7.0" layoutY="32.0" text="Role" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

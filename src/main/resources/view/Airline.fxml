@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="pane" fx:id="title" fx:controller="com.project.airportM.Controller.AirlineController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-1.0" maxWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="pnlAirline" layoutY="52.0" prefHeight="350.0" prefWidth="640.0" style="-fx-background-color: #ddd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <JFXButton layoutX="575.0" layoutY="115.0" text="Delete" />
+                  <JFXButton layoutX="520.0" layoutY="115.0" text="Update" />
+                  <JFXTextField layoutX="14.0" layoutY="115.0" promptText="Search" />
+                  <TableView fx:id="tblAirline" layoutY="150.0" prefHeight="200.0" prefWidth="640.0">
+                     <columns>
+                        <TableColumn minWidth="100.0" prefWidth="320.0" text="Airline" />
+                        <TableColumn prefWidth="320.0" text="Airline Code" />
+                     </columns>
+                  </TableView>
+                  <Pane fx:id="pnlAddAirline" layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="612.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <JFXButton fx:id="btnAdd" layoutX="287.0" layoutY="38.0" onAction="#setBtnAdd" text="Add" />
+                        <JFXTextField fx:id="txtairlineCode" layoutX="14.0" layoutY="14.0" promptText="Airline Code" />
+                        <JFXTextField fx:id="txtdescription" layoutX="14.0" layoutY="51.0" promptText="Airline" />
+                        <Label fx:id="lblError" layoutX="325.0" layoutY="43.0" text="Label" visible="false" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="22.0" text="Add Airline" />
+               </children>
+            </Pane>
+            <Label layoutX="7.0" layoutY="35.0" text="Airlines" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="35.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
